@@ -22,12 +22,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // ✅ API Routes
+app.get("/", (req, res) => {
+  res.send("hello world");
+});
 app.use("/api/v1/users", userRouter);
 
 // ✅ Server Listening on Port 8080
-// const PORT = 8080;
-// app.listen(PORT, () =>
-//   console.log(`App is running at http://localhost:${PORT}`)
-// );
-
-module.exports = app;
+const PORT = 8080;
+app.listen(PORT, () =>
+  console.log(`App is running at http://localhost:${PORT}`)
+);
