@@ -11,8 +11,8 @@ app.get("/about", (req, res) => {
   res.send("About route 🎉 ");
 });
 
-app.listen(PORT, () => {
-  console.log(`✅ Server is running on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`✅ Server is running on port ${PORT}`);
+// });
 // ✅ Do NOT use app.listen() in serverless functions
-// module.exports = app;
+module.exports = app;
