@@ -21,7 +21,6 @@ const createUser = async (req, res) => {
 const getUsers = async (req, res) => {
   const pageNumber = req.query.page;
   const pageSize = parseInt(req.query.size);
-  // console.log("query", page, size, req, req.query, req.originalUrl);
   try {
     const users = await user
       .find()
