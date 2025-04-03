@@ -12,7 +12,7 @@ connectMongoDb();
 app.use(
   cors({
     origin: [
-      /* "http://localhost:5173",  */ "https://your-frontend.vercel.app",
+      /* "http://localhost:5173",  */ "https://crud-frontend-six-chi.vercel.app",
     ], // Frontend URL
     methods: ["GET", "POST", "PATCH", "DELETE"],
     credentials: true,
